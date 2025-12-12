@@ -823,8 +823,11 @@ position: relative;
     .project-card p{
       font-size: 1.5rem;
     }
-    h4{
-        font-size: 8px;
+    .services-box h4{
+        font-size: 2.5rem;
+    }
+    .services-box i{
+      font-size: 6rem !important;
     }
 }
 @media screen and (min-width:768px) and (max-width: 1024px){
