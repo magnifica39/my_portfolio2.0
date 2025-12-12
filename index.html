@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | FICA</title>
+
+  <!-- Fonts & icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS (will be used in script.js) -->
+
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="site-header" role="banner">
+    <a class="logo" href="#home"><span>MAGNIFICA</span></a>
+
+    <!-- menu icon (hamburger) -->
+    <button id="menu-icon" class="menu-btn" aria-label="Basculer le menu" aria-expanded="false">
+      <i class="bx bx-menu"></i>
+    </button>
+
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+      <a href="#home" class="active" class=".nav-link">Accueil</a>
+      <a href="#education" class=".nav-link">Education</a>
+      <a href="#services"class=".nav-link">Services</a>
+      <a href="#projects" class=".nav-link">Réalisations</a>
+      <a href="#testimonials" class=".nav-link">Témoignages</a>
+      <a href="#contact" class=".nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HOME ===== -->
+  <main>
+    <section class="home" id="home" aria-labelledby="home-title">
+      <div class="home-content">
+        <h1 id="home-title">Bienvenue, c'est<span> Magnifica</span></h1>
+
+        <!-- Typewriter element: JS control -->
+        <h3 class="text-animation" id="typewriter"><span> </span></h3>
+
+        <p class="lead">
+          J'aime le code propre, les interfaces intuitives et les designs qui racontent une histoire.
+          Mon objectif : créer des expériences web claires, rapides et esthétiques.
+        </p>
+
+        <div class="social-icons" aria-hidden="false">
+          <a href="https://www.linkedin.com/in/lodouhoue-magnifica-005194371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/magnifica39" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://wa.me/22953883380" aria-label="GitHub"><i class="bx bxl-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100078135062012" aria-label="facebook"><i class="bx bxl-facebook"></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn primary">Me contacter</a>
+          <a href="#projects" class="btn ghost">Voir mes projets</a>
+        </div>
+      </div>
+
+      <div class="home-img" aria-hidden="false">
+        <!-- clickable image opens modal zoom -->
+        <img id="profile-photo" src="mag11.jpg" alt="Photo de Magnifica" role="img" />
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+
+      <div class="timeline-items" role="list">
+        <!-- timeline items (kept your content, text improved lightly) -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <time class="date">2012-2018</time>
+          <div class="timeline-content">
+            <h3>Cours Primaire</h3>
+            <p>
+              Obtention du CEP à l'école Primaire Privée la PERSEVERANCE de Bohicon.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <time class="date">2018-2021</time>
+          <div class="timeline-content">
+            <h3>Collège</h3>
+            <p>
+              J'ai décroché mon BEPC au CEG4 Bohicon.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <time class="date">2021-2024</time>
+          <div class="timeline-content">
+            <h3>Lycée</h3>
+            <p>
+              Obtention du diplôme de technicien (DT) au CPET-ARCHIMEDE.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <time class="date">2025-2026</time>
+          <div class="timeline-content">
+            <h3>Université (Licence)</h3>
+            <p>
+              Inscrite en Systèmes Informatique & Logiciels à l'ISGG d'Abomey-Calavi pour poursuivre ma formation universitaire.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="fa-solid fa-computer service-icon" aria-hidden="true"></i>
+          <div class="services-info">
+            <h4>Maintenance des ordinateurs</h4>
+            <p>
+              De l'analyse à la correction, tout pour garder votre PC toujours au top.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-box">
+        <i class="fa-solid fa-code service-icon" aria-hidden="true"></i>
+          <div class="services-info">
+            <h4>Front-end Development</h4>
+            <p>
+              HTML, CSS et JavaScript pour transformer les maquettes en pages web accessibles.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-box">
+        <i class="fa-solid fa-server service-icon" aria-hidden="true"></i>
+          <div class="services-info">
+            <h4>Back-end Development</h4>
+            <p>
+              Notions de serveur, bases de données et sécurité.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-box">
+        <i class="fa-solid fa-vial-circle-check service-icon" aria-hidden="true"></i>
+          <div class="services-info">
+            <h4>Testing & QA <small>(Quality Assurance)</small></h4>
+            <p>
+              Tests multi-navigateurs et optimisation des performances.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+  <h2 class="heading">Mes <span>Réalisations</span></h2>
+
+  <div class="projects-slider" id="projects-slider">
+    <button class="slider-prev slider-control" aria-label="Projet précédent">&lt;</button>
+
+    <div class="slides-wrapper" aria-live="polite">
+      <div class="slides-inner">
+        <article class="project-card" data-category="web">
+          <img src="beauty.jpg" alt="Projet 1 - Vignette" />
+          <h3>Site Vitrine1</h3>
+          <p>Site responsive avec animations et formulaire.</p>
+          <a class="project-link" href="#projects" aria-label="Voir le projet 1">Voir</a>
+        </article>
+
+        <article class="project-card" data-category="ui">
+          <img src="restaurant.jpg" alt="Projet 2 - Vignette" />
+          <h3>Site de vente en ligne</h3>
+          <p>Site d'un restaurant où on peut lancer la commande en ligne.</p>
+          <a class="project-link" href="#projects" aria-label="Voir le projet 2">Voir</a>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <img src="food.jpg" alt="Projet 3 - Vignette" />
+          <h3>E-commerce (maquette)</h3>
+          <p>Maquette et intégration front-end pour boutique en ligne.</p>
+          <a class="project-link" href="#projects" aria-label="Voir le projet 3">Voir</a>
+        </article>
+
+        <article class="project-card" data-category="other">
+          <img src="maintenance.jpg" alt="Projet 4 - Vignette" />
+          <h3>Maintenance</h3>
+          <p>Réparation d'une panne matérielle sur un ordinateur bureautique.</p>
+          <a class="project-link" href="#projects" aria-label="Voir le projet 4">Voir</a>
+        </article>
+      </div>
+    </div>
+
+    <button class="slider-next slider-control" aria-label="Projet suivant">&gt;</button>
+  </div>
+
+  <div id="projects-dots" class="slider-dots" aria-hidden="false"></div>
+</section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+      <h2 class="heading">Témoignages</h2>
+      <div class="wrapper">
+        <div class="testimonial-item">
+          <img src="img_h.jpg" alt="Photo de Stéphane H.">
+          <h3>Stéphane H.</h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+          </div>
+          <p>Ma collaboration avec Magnifica a été fluide et productive...</p>
+        </div>
+        <div class="testimonial-item">
+          <img src="img_h.jpg" alt="Photo de Brayane A.">
+          <h3>Brayane A.</h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+          </div>
+          <p>Travailler avec Magnifica m’a permis d’apprendre beaucoup...</p>
+        </div>
+        <div class="testimonial-item">
+          <img src="img_h.jpg" alt="Photo de Elmerythe H.">
+          <h3>Elmerythe H.</h3>
+          <div class="rating">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+          </div>
+          <p>J’ai beaucoup apprécié le travail de Magnifica et je collabore toujours...</p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== CONTACT ===== -->
+    
+    <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="heading">Me <span>Contacter</span></h2>
+      <form id="contact-form">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea name="message" cols="20" rows="10" placeholder="Votre message" required></textarea>
+          <input type="submit" value="Envoyer" class="btn">
+        </div>
+      </form>
+      <div id="status"></div>
+    </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/lodouhoue-magnifica-005194371?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://github.com/magnifica39" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+      <a href="https://wa.me/22953883380" aria-label="GitHub"><i class="bx bxl-whatsapp"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100078135062012" aria-label="facebook"><i class="bx bxl-facebook"></i></a>    
+    </div>
+
+    <ul class="list" role="navigation" aria-label="Liens rapide">
+      <li><a href="#education">FAQ</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#home">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#testimonials">Témoignages</a></li>
+    </ul>
+
+    <p class="copyright">© Magnifica LODOUHOUE — Tous droits réservés</p>
+  </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init("BTn7H0-94Dxi--zNC"); // Remplace TON_USER_ID par ton User ID EmailJS
+   })();
+</script>
+  
+  <!-- Main JS -->
+   <script src="script.js"></script>
+</body>
+</html>
